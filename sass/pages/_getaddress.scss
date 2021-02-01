@@ -1,0 +1,27 @@
+.get-address {
+  background-color: $bg-grey-light;
+  padding-bottom: 2rem;
+
+  &__heading {
+    margin-top: 10rem;
+    margin-bottom: 3rem;
+  }
+
+  &__detail {
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+    font-weight: 400;
+    color: $color-secondary;
+
+    margin-bottom: 3rem;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__thumb img {
+    height: 50rem;
+  }
+}

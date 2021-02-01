@@ -1,0 +1,16 @@
+.navigation {
+  background-color: $bg-primary-light;
+
+  //   .nav-wrapper {
+  //     background-color: $bg-primary-light;
+  //   }
+  &__nav {
+    box-shadow: none;
+    background-color: transparent;
+  }
+
+  #nav-mobile a {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+}

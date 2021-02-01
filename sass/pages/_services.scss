@@ -1,0 +1,40 @@
+.services {
+  background-image: linear-gradient(
+    to bottom,
+    rgba($bg-primary-light, 1),
+    rgba($bg-primary-dark, 1)
+  );
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+
+  &__content {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+}
+
+.service {
+  background-color: $color-white;
+  border-radius: 10px;
+  padding: 2.5rem;
+  margin: 2rem 1rem;
+
+  &__top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 1.5rem;
+    line-height: 3rem;
+  }
+
+  &__image {
+    margin-right: 10px;
+  }
+
+  &__detail {
+    font-size: 1.5rem;
+    color: $color-secondary;
+    line-height: 2.8rem;
+    margin-bottom: 1.5rem;
+  }
+}

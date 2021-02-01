@@ -1,0 +1,86 @@
+.rounded-btn {
+  color: #ffffff;
+  line-height: 31px;
+  font-size: 20px;
+
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  transition: all 0.3s ease-in-out !important;
+  -webkit-transition: all 0.3s ease-in-out !important;
+  border-radius: 35px !important;
+
+  padding: 11px 35px;
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+
+  &:hover {
+    background-color: $btn-bg-primary;
+    border: 2px solid $btn-bg-primary;
+  }
+}
+.btn-transparent {
+  background-color: transparent;
+}
+.btn-warning {
+  background-color: $btn-bg-warning;
+  &:hover {
+    background-color: $btn-bg-warning;
+    border: 2px solid $btn-bg-warning;
+  }
+}
+
+.button {
+  color: #ffffff;
+  line-height: 26px;
+  font-size: 15px;
+
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  transition: all 0.3s ease-in-out !important;
+  -webkit-transition: all 0.3s ease-in-out !important;
+  border-radius: 5px !important;
+
+  padding: 12px 60px;
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+  background-color: $color-black;
+}
+
+.btn-success {
+  background-color: $btn-bg-primary;
+
+  &:hover {
+    border: 2px solid $btn-bg-primary;
+    background-color: $bg-white;
+    color: $btn-bg-primary;
+  }
+}
+
+.btn-hover-black {
+  &:hover {
+    background-color: $color-black;
+    color: $color-white;
+    border: 2px solid $color-black;
+  }
+}
+
+.btn-remove-radius {
+  border-radius: 0px !important;
+  &:hover {
+    border-radius: 0px !important;
+  }
+}
+
+.button-link {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 2.2rem;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  color: $btn-bg-primary;
+  text-transform: uppercase;
+}
