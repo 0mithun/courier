@@ -1,0 +1,87 @@
+.how-it-works {
+  &__bg {
+    padding-top: 20rem;
+    padding-bottom: 20rem;
+
+    background: url(../img/how-it-works-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+  }
+
+  &__bottom {
+    margin-top: -30rem;
+  }
+
+  &__header {
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+
+  &__steps {
+    text-align: center;
+    margin-bottom: 10rem;
+  }
+
+  &__steps--img {
+  }
+
+  &__steps--heading {
+    margin-bottom: 7px;
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: $color-black;
+    line-height: 2.7rem;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+  }
+  &__steps--detail {
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+    color: $color-secondary;
+  }
+
+  &__supports {
+    &--heading {
+      margin-bottom: 3rem;
+    }
+    &--shopping-and-deliver {
+      max-width: 90%;
+      height: auto;
+    }
+
+    &--details {
+      font-size: 1.5rem;
+      line-height: 2.8rem;
+      color: #323849;
+      margin-bottom: 2rem;
+    }
+
+    &--steps {
+      &__title {
+        font-size: 1.7rem;
+        color: $color-secondary;
+        line-height: 2.6rem;
+        text-align: left;
+        font-weight: bold;
+        margin-bottom: 1.5rem;
+      }
+
+      &__body {
+        font-size: 1.5rem;
+        line-height: 2.8rem;
+        color: #323849;
+        margin-bottom: 2rem;
+      }
+    }
+
+    &--step__single {
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+.item-no {
+  color: $btn-bg-primary;
+  margin-right: 5px;
+  font-weight: bold;
+}

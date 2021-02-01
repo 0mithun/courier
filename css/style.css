@@ -411,3 +411,70 @@ h6 {
   font-size: 1.8rem;
   color: #ffffff;
   line-height: 2.8rem; }
+
+.how-it-works__bg {
+  padding-top: 20rem;
+  padding-bottom: 20rem;
+  background: url(../img/how-it-works-bg.jpg);
+  background-size: cover;
+  background-position: center center; }
+
+.how-it-works__bottom {
+  margin-top: -30rem; }
+
+.how-it-works__header {
+  text-align: center;
+  margin-bottom: 5rem; }
+
+.how-it-works__steps {
+  text-align: center;
+  margin-bottom: 10rem; }
+
+.how-it-works__steps--heading {
+  margin-bottom: 7px;
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: #000000;
+  line-height: 2.7rem;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out; }
+
+.how-it-works__steps--detail {
+  font-size: 1.5rem;
+  line-height: 2.8rem;
+  color: #323849; }
+
+.how-it-works__supports--heading {
+  margin-bottom: 3rem; }
+
+.how-it-works__supports--shopping-and-deliver {
+  max-width: 90%;
+  height: auto; }
+
+.how-it-works__supports--details {
+  font-size: 1.5rem;
+  line-height: 2.8rem;
+  color: #323849;
+  margin-bottom: 2rem; }
+
+.how-it-works__supports--steps__title {
+  font-size: 1.7rem;
+  color: #323849;
+  line-height: 2.6rem;
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 1.5rem; }
+
+.how-it-works__supports--steps__body {
+  font-size: 1.5rem;
+  line-height: 2.8rem;
+  color: #323849;
+  margin-bottom: 2rem; }
+
+.how-it-works__supports--step__single {
+  margin-bottom: 1.5rem; }
+
+.item-no {
+  color: #0abc5f;
+  margin-right: 5px;
+  font-weight: bold; }
