@@ -1,0 +1,233 @@
+.shipping-calculator {
+  background-color: $color-white;
+
+  .discount {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    background-color: $bg-primary-dark;
+    padding: 3rem;
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  .discount-title {
+    text-transform: uppercase;
+    line-height: 4.8rem;
+    letter-spacing: -1px;
+    font-weight: 700;
+    font-style: normal;
+    color: $color-white;
+    font-size: 4rem;
+    opacity: 1;
+    -webkit-transition: opacity 0.24s ease-in-out;
+    -moz-transition: opacity 0.24s ease-in-out;
+    transition: opacity 0.24s ease-in-out;
+
+    .discount-amount {
+      color: $color-red-light;
+    }
+  }
+}
+
+.weight-of-goods {
+  border: 1px solid $color-orange-light;
+  text-align: center;
+  box-shadow: none;
+
+  &__heading {
+    margin-bottom: 3rem;
+
+    line-height: 4.8rem;
+    letter-spacing: -1px;
+    font-weight: 700;
+    font-size: 4rem;
+  }
+  &__lists {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    width: 20%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+
+    &--img {
+      margin-bottom: 3.5rem;
+    }
+
+    &--name {
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.shipping-companies {
+  font-size: 1.5rem;
+  line-height: 2.8rem;
+  font-weight: 400;
+
+  border: 1px solid $color-orange-light;
+  box-shadow: none;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+
+  &__heading {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+    margin-bottom: 3rem;
+  }
+
+  &__details {
+    margin-bottom: 3rem;
+    font-size: inherit;
+  }
+
+  &__lists {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    width: 20%;
+    text-align: center;
+
+    &--img {
+      margin-bottom: 3rem;
+    }
+
+    &--name {
+      color: $bg-grey-dark;
+    }
+  }
+}
+
+.shopping-help {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2.8rem;
+  font-weight: 400;
+
+  &-card {
+    background-color: $bg-primary-dark;
+
+    border: 1px solid $color-orange-light;
+    box-shadow: none;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    color: $color-white;
+
+    margin-bottom: 4rem;
+    border-radius: 5px;
+  }
+
+  &__heading {
+    margin-bottom: 3rem;
+
+    line-height: 4.8rem;
+    letter-spacing: -1px;
+    font-weight: 700;
+    font-size: 4rem;
+  }
+
+  &__heading {
+    margin-bottom: 3rem;
+
+    line-height: 4.8rem;
+    letter-spacing: -1px;
+    font-weight: 700;
+    font-size: 4rem;
+  }
+}
+
+.start-shop-and-ship {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2.8rem;
+  font-weight: 400;
+
+  &--card {
+    border: 1px solid $color-orange-light;
+    box-shadow: none;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  &__heading {
+    font-size: 4rem;
+    line-height: 4.8rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+
+  &__details {
+  }
+  &__details--strong {
+    margin-bottom: 4rem !important;
+  }
+
+  &__img {
+    margin-bottom: 2rem;
+  }
+}
+
+.shipping-cost {
+  font-size: 1.5rem;
+  line-height: 2.8rem;
+  font-weight: 400;
+
+  &--card {
+    border: 1px solid $color-orange-light;
+    box-shadow: none;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  &__heading {
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+  }
+}
+
+.shipping-country {
+  font-size: 1.5rem;
+  line-height: 2.8rem;
+
+  &--card {
+    background-color: $bg-primary-dark;
+    border: 1px solid $color-orange-light;
+    box-shadow: none;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+}
+
+.shipping-calculator {
+  .calculator {
+    margin-bottom: 6rem;
+    clear: both;
+    overflow: hidden;
+  }
+  &__heading {
+    font-size: 4rem;
+    line-height: 4.8rem;
+    margin-bottom: 1rem;
+  }
+
+  &--card {
+    border-radius: 10px;
+  }
+
+  &__btn {
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+  }
+}

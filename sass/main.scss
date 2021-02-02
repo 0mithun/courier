@@ -6,7 +6,10 @@
 @import "base/base";
 @import "base/typrography";
 @import "base/utilities";
+@import "components/form";
 @import "components/buttons";
+@import "components/select";
+@import "components/input";
 
 @import "layout/footer";
 @import "layout/header";
@@ -20,3 +23,5 @@
 @import "pages/getaddress";
 @import "pages/footertop";
 @import "pages/how-it-works";
+@import "pages/buy-for-me";
+@import "pages/shipping-calculator";

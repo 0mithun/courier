@@ -60,6 +60,18 @@
   }
 }
 
+.btn-primary {
+  background-color: $bg-dark-blue;
+  border: 1px solid $bg-dark-blue;
+  color: $color-white;
+
+  &:hover {
+    border: 1px solid $bg-dark-blue;
+    background-color: $bg-white;
+    color: $bg-dark-blue;
+  }
+}
+
 .btn-hover-black {
   &:hover {
     background-color: $color-black;

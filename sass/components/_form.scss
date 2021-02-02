@@ -1,0 +1,23 @@
+.label-blue {
+  font-weight: bold;
+  color: $bg-dark-blue;
+  text-align: left;
+  width: 100%;
+  font-size: 1.6rem;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+
+  .row {
+    margin-bottom: 0;
+  }
+}
+
+.form-help {
+  font-size: 13px;
+  overflow: hidden;
+  clear: both;
+}
