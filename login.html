@@ -23,8 +23,7 @@
 
     <title>Natours | Exciting tours for adventours people</title>
 
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
 </head>
 
 <body>
@@ -42,6 +41,17 @@
                         <li><a href="login.html">Login</a></li>
                         <li><a href="register.html">Regiter</a></li>
                     </ul>
+
+                    <ul id="slide-out" class="sidenav">
+                        <li><a href="how-it-works.html">How It Works</a></li>
+                        <li><a href="buy-for-me.html">Buy For Me</a></li>
+                        <li><a href="shipping-calculator.html">Shipping Calculator</a></li>
+                        <li><a href="shopping-sites.html">Shopping Sites</a></li>
+                        <!-- <li><a href="collapsible.html">My Account</a></li> -->
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Regiter</a></li>
+                    </ul>
+                    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 </div>
             </nav>
         </div>
@@ -198,9 +208,12 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="./js/owl-carousel/owl.carousel.min.js"></script>
     <script>
         $(document).ready(function () {
+             $('.sidenav').sidenav();
             $('.shopping-sites-carousel').owlCarousel({
                 loop: true,
                 margin: 30,
