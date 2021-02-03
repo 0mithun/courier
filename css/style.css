@@ -729,3 +729,53 @@ h6 {
   text-align: center;
   margin-top: 4rem;
   margin-bottom: 3rem; }
+
+.contact-informations {
+  background-color: #ffffff;
+  padding-top: 15rem;
+  padding-bottom: 10rem; }
+  .contact-informations .contact-information {
+    text-align: center;
+    color: #030712;
+    font-size: 1.5rem;
+    line-height: 2.8rem; }
+    .contact-informations .contact-information__img {
+      margin-right: -45px;
+      margin-bottom: 2.5rem; }
+    .contact-informations .contact-information__name {
+      font-size: 2.5rem;
+      line-height: 3.5rem;
+      margin-bottom: 2.5rem;
+      font-weight: 700; }
+    .contact-informations .contact-information__details {
+      margin-bottom: 2rem; }
+    .contact-informations .contact-information__contact {
+      color: #000000;
+      font-weight: 600;
+      font-size: 1.8rem;
+      line-height: 2.6rem; }
+
+.contact-form {
+  background-color: #efeef7;
+  padding-top: 10rem;
+  padding-bottom: 10rem; }
+  .contact-form__heading {
+    text-align: center;
+    font-size: 3.5rem;
+    color: #030712;
+    line-height: 4rem;
+    font-weight: 700;
+    margin-bottom: 3rem; }
+  .contact-form__details {
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+    color: #030712;
+    margin-bottom: 5rem; }
+  .contact-form__form label {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #000000;
+    top: -10px; }
+  .contact-form__submit {
+    text-align: center; }
