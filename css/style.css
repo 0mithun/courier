@@ -779,3 +779,85 @@ h6 {
     top: -10px; }
   .contact-form__submit {
     text-align: center; }
+
+.blog-post__card {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.8rem;
+  color: #030712;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem; }
+  .blog-post__card .card-title {
+    font-weight: 700;
+    margin-bottom: 2.5rem; }
+
+.user-agreement {
+  padding-top: 15rem;
+  padding-bottom: 5rem;
+  background-color: #ffffff;
+  font-size: 1.5rem;
+  line-height: 2.8rem; }
+  .user-agreement__heading {
+    margin-bottom: 2rem;
+    font-size: 3.5rem;
+    line-height: 4.3rem;
+    font-weight: 700; }
+
+.prohibited-items {
+  background-color: #ffffff;
+  padding-top: 15rem;
+  padding-bottom: 5rem; }
+  .prohibited-items__header {
+    text-align: center;
+    margin-bottom: 5rem; }
+  .prohibited-items__heading {
+    margin-bottom: 2rem;
+    font-size: 3.5rem;
+    line-height: 4.3rem;
+    font-weight: 700; }
+  .prohibited-items__details {
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+    color: #030712; }
+  .prohibited-items__lists {
+    list-style-type: circle; }
+  .prohibited-items__item {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-left: 2.2rem; }
+    .prohibited-items__item::before {
+      position: absolute;
+      top: 10px;
+      left: 0;
+      z-index: 0;
+      content: "\f111";
+      font-family: "FontAwesome";
+      font-size: 50%;
+      background-color: #0abc5f;
+      height: 7px;
+      width: 7px;
+      border-radius: 50%; }
+
+.faq {
+  background-color: #ffffff;
+  padding-top: 15rem;
+  padding-bottom: 5rem; }
+  .faq__body {
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+    color: #000000; }
+    .faq__body .collapsible-header {
+      font-weight: 700;
+      text-transform: uppercase;
+      padding-top: 2rem;
+      padding-bottom: 2rem; }
+  .faq__header {
+    margin-bottom: 4rem; }
+  .faq__heading {
+    font-size: 3.5rem;
+    line-height: 4.3rem;
+    font-weight: 700;
+    text-transform: uppercase; }

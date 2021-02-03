@@ -1,0 +1,29 @@
+.faq {
+  background-color: $color-white;
+  padding-top: 15rem;
+  padding-bottom: 5rem;
+
+  &__body {
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+    color: $color-black;
+
+    .collapsible-header {
+      font-weight: 700;
+      text-transform: uppercase;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+  }
+
+  &__header {
+    margin-bottom: 4rem;
+  }
+
+  &__heading {
+    font-size: 3.5rem;
+    line-height: 4.3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
