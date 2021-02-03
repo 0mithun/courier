@@ -76,3 +76,58 @@
   justify-content: center;
   height: 100%;
 }
+
+.shopping-sites__lists {
+  background-color: $color-white;
+  padding-top: 15rem;
+  padding-bottom: 5rem;
+
+  &__header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  &__heading {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 4.8rem;
+    margin-bottom: 3rem;
+  }
+
+  &__details {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+  }
+
+  &__filters {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+    .filter-menu {
+      .filter-button-group {
+        display: flex;
+        flex-direction: column;
+        .btn {
+          margin-bottom: 5px;
+        }
+      }
+    }
+    .grid-items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .filter-item {
+      border: 1px solid red;
+      // padding: 5px;
+      margin: 5px;
+      width: 24%;
+
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}

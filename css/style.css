@@ -345,6 +345,41 @@ h6 {
   justify-content: center;
   height: 100%; }
 
+.shopping-sites__lists {
+  background-color: #ffffff;
+  padding-top: 15rem;
+  padding-bottom: 5rem; }
+  .shopping-sites__lists__header {
+    text-align: center;
+    margin-bottom: 3rem; }
+  .shopping-sites__lists__heading {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 4.8rem;
+    margin-bottom: 3rem; }
+  .shopping-sites__lists__details {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2.8rem; }
+  .shopping-sites__lists__filters {
+    margin-top: 3rem;
+    margin-bottom: 3rem; }
+    .shopping-sites__lists__filters .filter-menu .filter-button-group {
+      display: flex;
+      flex-direction: column; }
+      .shopping-sites__lists__filters .filter-menu .filter-button-group .btn {
+        margin-bottom: 5px; }
+    .shopping-sites__lists__filters .grid-items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+    .shopping-sites__lists__filters .filter-item {
+      border: 1px solid red;
+      margin: 5px;
+      width: 24%; }
+      .shopping-sites__lists__filters .filter-item img {
+        max-width: 100%; }
+
 .reviews {
   background-image: linear-gradient(90deg, #5a61d9, #50a1be);
   text-align: center;
@@ -861,3 +896,15 @@ h6 {
     line-height: 4.3rem;
     font-weight: 700;
     text-transform: uppercase; }
+
+.login {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  font-size: 1.5rem;
+  line-height: 2.8rem; }
+  .login label {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #000000;
+    top: -10px; }
