@@ -4,8 +4,12 @@
     rgba($bg-primary-light, 1),
     rgba($bg-primary-dark, 1)
   );
-  padding-top: 30px;
-  padding-bottom: 10px;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+
+  @include respond(tab-land){
+      padding-top: 1rem;
+   }
 
   .title-primary {
     @extend .heading-primary;
@@ -16,6 +20,14 @@
   &__top {
     min-height: 40rem;
     padding: 5rem 0;
+
+    @include respond(tab-land){
+      padding: 2rem 0;
+     }
+     
+    @include respond(phone){
+      padding: 1rem 0;
+     }
   }
 
   &__bottom {
@@ -24,4 +36,12 @@
     justify-content: center;
     align-items: center;
   }
+
+  .hero{
+    margin-bottom: 2rem;
+    @include respond(big-desktop){
+      margin-bottom: 0;
+    }
+  }
 }
+

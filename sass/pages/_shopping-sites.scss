@@ -23,6 +23,13 @@
   padding: 2rem 0;
   text-align: center;
 
+  @include respond(tab-land){
+    padding: 1.5rem 0;
+   }
+  @include respond(phone){
+    padding: 1rem 0;
+   }
+
   &__carousel {
     margin-bottom: 2rem;
   }
@@ -82,9 +89,29 @@
   padding-top: 15rem;
   padding-bottom: 5rem;
 
+  @include respond(tab-land){
+    padding-top: 10rem;
+    padding-bottom: 3rem;
+   }
+  @include respond(tab-port){
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+   }
+  @include respond(phone){
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+   }
+
   &__header {
     text-align: center;
     margin-bottom: 3rem;
+
+    @include respond(tab-land){
+      margin-bottom: 2rem;
+     }
+    @include respond(phone){
+      margin-bottom: 1rem;
+     }
   }
 
   &__heading {
@@ -92,6 +119,13 @@
     font-weight: 700;
     line-height: 4.8rem;
     margin-bottom: 3rem;
+
+    @include respond(tab-land){
+      margin-bottom: 2rem;
+     }
+    @include respond(phone){
+      margin-bottom: 1rem;
+     }
   }
 
   &__details {
@@ -103,6 +137,13 @@
   &__filters {
     margin-top: 3rem;
     margin-bottom: 3rem;
+
+    @include respond(tab-land){
+      margin-bottom: 2rem;
+     }
+    @include respond(phone){
+      margin-bottom: 1rem;
+     }
 
     .filter-menu {
       .filter-button-group {

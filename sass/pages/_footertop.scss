@@ -34,6 +34,16 @@
     font-size: 1.8rem;
     color: $color-white;
     line-height: 2.8rem;
+
+    @include respond(tab-land){
+    margin-bottom: 2rem;
+     }
+    @include respond(tab-port){
+      margin-bottom: 1.5rem;
+     }
+    @include respond(phone){
+      margin-bottom: 1rem;
+     }
   }
   &__details {
     margin-bottom: 2rem;
@@ -41,12 +51,20 @@
     font-size: 1.5rem;
     color: $color-white-dark;
     line-height: 2.6rem;
+
+    @include respond(phone){
+      margin-bottom: 0;
+     }
+  }
+
+  &__logo{
+    max-width: 100%;
   }
 
   &__single {
     margin-bottom: 1rem;
   }
-
+  
   &__item {
     margin-bottom: 1.2rem;
     font-weight: 400;
@@ -84,4 +102,24 @@
   font-size: 1.8rem;
   color: $color-white;
   line-height: 2.8rem;
+}
+
+
+.footer-top__menus{
+
+
+  .col{
+
+    @include respond(tab-port){
+      margin-bottom: 3rem;
+     }
+    @include respond(phone){
+      margin-bottom: 2rem;
+
+      &:last-child{
+        margin-bottom: 0;
+      }
+     }
+  }
+
 }

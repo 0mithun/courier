@@ -7,10 +7,21 @@
   &__content {
     padding-top: 3rem;
     text-align: center;
+
+    @include respond(tab-land){
+      padding-top: 2rem;
+     }
+    @include respond(phone){
+      padding-top: 1rem;
+     }
   }
 
   &__detail {
     padding: 2rem 0;
+
+    @include respond(phone){
+      padding: 1rem 0;
+     }
   }
   &__bg {
     max-width: 90%;

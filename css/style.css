@@ -1,3 +1,18 @@
+/*
+*
+*
+0-600px:    Phone
+600-900px:  Tablet Portrait
+900-1200px  Tablet landscape
+1200-1800px is where our normal styles apply
+1800px +    Big Desktop
+- phone
+- tab-pot
+- tab-land
+- big-desktop
+ORDER: Bae + typography > general layout + grid > page layout > components
+1em = 16px
+*/
 *,
 *::after,
 *::before {
@@ -7,6 +22,15 @@
 
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.4em) {
+    html {
+      font-size: 75%; } }
 
 h1,
 h2,
@@ -18,16 +42,32 @@ h6 {
   padding: 0; }
 
 .heading-primary, .header .title-primary {
-  font-size: 50px;
+  font-size: 5rem;
   color: #ffffff;
-  line-height: 60px;
+  line-height: 6rem;
   font-weight: 700; }
+  @media only screen and (max-width: 75em) {
+    .heading-primary, .header .title-primary {
+      font-size: 4rem;
+      line-height: 4.8rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .heading-primary, .header .title-primary {
+      font-size: 3rem;
+      line-height: 4rem; } }
 
 .heading-secondary, .header .title-secondary {
   font-size: 35px;
   color: #ffffff;
   line-height: 45px;
   font-weight: 400; }
+  @media only screen and (max-width: 75em) {
+    .heading-secondary, .header .title-secondary {
+      font-size: 3rem;
+      line-height: 4rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .heading-secondary, .header .title-secondary {
+      font-size: 2.5rem;
+      line-height: 3.5rem; } }
 
 .heading-primary-small {
   font-size: 3.5rem;
@@ -185,16 +225,30 @@ h6 {
 
 .header {
   background-image: linear-gradient(to bottom, #5a61d9, #595ed3);
-  padding-top: 30px;
-  padding-bottom: 10px; }
+  padding-top: 2rem;
+  padding-bottom: 1rem; }
+  @media only screen and (max-width: 75em) {
+    .header {
+      padding-top: 1rem; } }
   .header__top {
     min-height: 40rem;
     padding: 5rem 0; }
+    @media only screen and (max-width: 75em) {
+      .header__top {
+        padding: 2rem 0; } }
+    @media only screen and (max-width: 37.5em) {
+      .header__top {
+        padding: 1rem 0; } }
   .header__bottom {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
+  .header .hero {
+    margin-bottom: 2rem; }
+    @media only screen and (min-width: 112.4em) {
+      .header .hero {
+        margin-bottom: 0; } }
 
 .navigation {
   background-color: #5a61d9; }
@@ -212,6 +266,7 @@ h6 {
 .steps {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 100%; }
 
 .step {
@@ -222,8 +277,26 @@ h6 {
   align-items: center;
   text-align: center;
   margin-bottom: 1.5rem; }
+  @media only screen and (max-width: 75em) {
+    .step {
+      width: 33%; } }
+  @media only screen and (max-width: 56.25em) {
+    .step {
+      width: 50%; } }
+  @media only screen and (max-width: 37.5em) {
+    .step {
+      width: 100%; } }
   .step__image {
     width: 90%; }
+    @media only screen and (max-width: 75em) {
+      .step__image {
+        width: 80%; } }
+    @media only screen and (max-width: 56.25em) {
+      .step__image {
+        width: 70%; } }
+    @media only screen and (max-width: 37.5em) {
+      .step__image {
+        width: 50%; } }
   .step__content {
     padding: 10px; }
   .step__heading {
@@ -251,18 +324,34 @@ h6 {
   background-image: linear-gradient(to bottom, #5a61d9, #595ed3);
   padding-top: 2rem;
   padding-bottom: 3rem; }
+  @media only screen and (max-width: 75em) {
+    .services {
+      padding-top: 1rem;
+      padding-bottom: 1.5rem; } }
   .services__content {
     text-align: center;
     margin-bottom: 4rem; }
 
 .service {
   background-color: #ffffff;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 2.5rem;
   margin: 2rem 1rem; }
+  @media only screen and (max-width: 75em) {
+    .service {
+      padding: 1rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .service {
+      padding: 1rem;
+      margin: 1rem 0rem; } }
+  .service__heading {
+    font-size: 2rem; }
+    @media only screen and (max-width: 75em) {
+      .service__heading {
+        font-size: 1.8rem; } }
   .service__top {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-start;
     margin-bottom: 1.5rem;
     line-height: 3rem; }
@@ -282,8 +371,17 @@ h6 {
   .shopping__content {
     padding-top: 3rem;
     text-align: center; }
+    @media only screen and (max-width: 75em) {
+      .shopping__content {
+        padding-top: 2rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .shopping__content {
+        padding-top: 1rem; } }
   .shopping__detail {
     padding: 2rem 0; }
+    @media only screen and (max-width: 37.5em) {
+      .shopping__detail {
+        padding: 1rem 0; } }
   .shopping__bg {
     max-width: 90%; }
   .shopping__heading {
@@ -315,6 +413,12 @@ h6 {
   background-color: #ffffff;
   padding: 2rem 0;
   text-align: center; }
+  @media only screen and (max-width: 75em) {
+    .shopping-sites {
+      padding: 1.5rem 0; } }
+  @media only screen and (max-width: 37.5em) {
+    .shopping-sites {
+      padding: 1rem 0; } }
   .shopping-sites__carousel {
     margin-bottom: 2rem; }
   .shopping-sites__carousel--item {
@@ -349,14 +453,38 @@ h6 {
   background-color: #ffffff;
   padding-top: 15rem;
   padding-bottom: 5rem; }
+  @media only screen and (max-width: 75em) {
+    .shopping-sites__lists {
+      padding-top: 10rem;
+      padding-bottom: 3rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .shopping-sites__lists {
+      padding-top: 5rem;
+      padding-bottom: 2rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .shopping-sites__lists {
+      padding-top: 2rem;
+      padding-bottom: 1rem; } }
   .shopping-sites__lists__header {
     text-align: center;
     margin-bottom: 3rem; }
+    @media only screen and (max-width: 75em) {
+      .shopping-sites__lists__header {
+        margin-bottom: 2rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .shopping-sites__lists__header {
+        margin-bottom: 1rem; } }
   .shopping-sites__lists__heading {
     font-size: 4rem;
     font-weight: 700;
     line-height: 4.8rem;
     margin-bottom: 3rem; }
+    @media only screen and (max-width: 75em) {
+      .shopping-sites__lists__heading {
+        margin-bottom: 2rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .shopping-sites__lists__heading {
+        margin-bottom: 1rem; } }
   .shopping-sites__lists__details {
     font-size: 1.5rem;
     font-weight: 400;
@@ -364,6 +492,12 @@ h6 {
   .shopping-sites__lists__filters {
     margin-top: 3rem;
     margin-bottom: 3rem; }
+    @media only screen and (max-width: 75em) {
+      .shopping-sites__lists__filters {
+        margin-bottom: 2rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .shopping-sites__lists__filters {
+        margin-bottom: 1rem; } }
     .shopping-sites__lists__filters .filter-menu .filter-button-group {
       display: flex;
       flex-direction: column; }
@@ -384,8 +518,26 @@ h6 {
   background-image: linear-gradient(90deg, #5a61d9, #50a1be);
   text-align: center;
   padding: 4rem 0; }
+  @media only screen and (max-width: 75em) {
+    .reviews {
+      padding: 3rem 0; } }
+  @media only screen and (max-width: 56.25em) {
+    .reviews {
+      padding: 2rem 0; } }
+  @media only screen and (max-width: 37.5em) {
+    .reviews {
+      padding: .5rem 0; } }
   .reviews__header {
     margin-bottom: 2.5rem; }
+    @media only screen and (max-width: 75em) {
+      .reviews__header {
+        margin-bottom: 2rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .reviews__header {
+        margin-bottom: 1.5rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .reviews__header {
+        margin-bottom: 1rem; } }
   .reviews__count {
     font-size: 2rem;
     color: #ffffff;
@@ -399,6 +551,15 @@ h6 {
   margin-bottom: 1.5rem;
   background-color: white;
   padding: 3rem 2.5rem; }
+  @media only screen and (max-width: 75em) {
+    .review {
+      padding: 2.5rem 2rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .review {
+      padding: 2rem 1.5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .review {
+      padding: 1rem .5rem; } }
   .review__content {
     display: flex;
     flex-direction: column;
@@ -430,17 +591,50 @@ h6 {
     line-height: 2.8rem;
     color: #323849;
     margin-bottom: 1rem; }
+    @media only screen and (max-width: 37.5em) {
+      .review__body {
+        margin-bottom: 0; } }
   .review:hover {
     margin-top: 0;
     margin-bottom: 0;
     padding: 4.5rem 2.5rem; }
+    @media only screen and (max-width: 75em) {
+      .review:hover {
+        padding: 3.5rem 2rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .review:hover {
+        padding: 3rem 1.5rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .review:hover {
+        padding: 1rem .5rem; } }
 
 .get-address {
   background-color: #efeef7;
   padding-bottom: 2rem; }
+  @media only screen and (max-width: 75em) {
+    .get-address {
+      padding-bottom: 1.5rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .get-address {
+      padding-bottom: 1rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .get-address {
+      padding-bottom: 0; } }
   .get-address__heading {
     margin-top: 10rem;
     margin-bottom: 3rem; }
+    @media only screen and (max-width: 75em) {
+      .get-address__heading {
+        margin-top: 8rem;
+        margin-bottom: 2.5rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .get-address__heading {
+        margin-top: 5rem;
+        margin-bottom: 2rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .get-address__heading {
+        margin-top: 2rem;
+        margin-bottom: 1rem; } }
   .get-address__detail {
     font-size: 1.5rem;
     line-height: 2.8rem;
@@ -451,7 +645,9 @@ h6 {
     display: flex;
     justify-content: center; }
   .get-address__thumb img {
-    height: 50rem; }
+    height: 50rem;
+    max-width: 100%;
+    text-align: center; }
 
 .footer-top {
   background: #1a2024;
@@ -479,6 +675,15 @@ h6 {
   font-size: 1.8rem;
   color: #ffffff;
   line-height: 2.8rem; }
+  @media only screen and (max-width: 75em) {
+    .footer-menu__heading {
+      margin-bottom: 2rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .footer-menu__heading {
+      margin-bottom: 1.5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .footer-menu__heading {
+      margin-bottom: 1rem; } }
 
 .footer-menu__details {
   margin-bottom: 2rem;
@@ -486,6 +691,12 @@ h6 {
   font-size: 1.5rem;
   color: #d9e0e8;
   line-height: 2.6rem; }
+  @media only screen and (max-width: 37.5em) {
+    .footer-menu__details {
+      margin-bottom: 0; } }
+
+.footer-menu__logo {
+  max-width: 100%; }
 
 .footer-menu__single {
   margin-bottom: 1rem; }
@@ -518,6 +729,16 @@ h6 {
   font-size: 1.8rem;
   color: #ffffff;
   line-height: 2.8rem; }
+
+@media only screen and (max-width: 56.25em) {
+  .footer-top__menus .col {
+    margin-bottom: 3rem; } }
+
+@media only screen and (max-width: 37.5em) {
+  .footer-top__menus .col {
+    margin-bottom: 2rem; }
+    .footer-top__menus .col:last-child {
+      margin-bottom: 0; } }
 
 .how-it-works__bg {
   padding-top: 20rem;

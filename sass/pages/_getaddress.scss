@@ -2,9 +2,32 @@
   background-color: $bg-grey-light;
   padding-bottom: 2rem;
 
+  @include respond(tab-land){
+    padding-bottom: 1.5rem;
+   }
+  @include respond(tab-port){
+    padding-bottom: 1rem;
+   }
+  @include respond(phone){
+    padding-bottom: 0;
+   }
+
   &__heading {
     margin-top: 10rem;
     margin-bottom: 3rem;
+
+    @include respond(tab-land){
+      margin-top: 8rem;
+    margin-bottom: 2.5rem;
+     }
+    @include respond(tab-port){
+      margin-top: 5rem;
+      margin-bottom: 2rem;
+     }
+    @include respond(phone){
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+     }
   }
 
   &__detail {
@@ -23,5 +46,7 @@
 
   &__thumb img {
     height: 50rem;
+    max-width: 100%;
+    text-align: center;
   }
 }
