@@ -114,16 +114,16 @@ h6 {
 
 .rounded-btn {
   color: #ffffff;
-  line-height: 31px;
-  font-size: 20px;
+  line-height: 3rem;
+  font-size: 2rem;
   position: relative;
   display: inline-block;
   vertical-align: top;
   text-align: center;
   transition: all 0.3s ease-in-out !important;
   -webkit-transition: all 0.3s ease-in-out !important;
-  border-radius: 35px !important;
-  padding: 11px 35px;
+  border-radius: 3.5rem !important;
+  padding: 1.1rem 3.5rem;
   border: 2px solid #ffffff;
   box-sizing: border-box; }
   .rounded-btn:hover {
@@ -141,8 +141,8 @@ h6 {
 
 .button {
   color: #ffffff;
-  line-height: 26px;
-  font-size: 15px;
+  line-height: 2.6rem;
+  font-size: 1.5rem;
   position: relative;
   display: inline-block;
   vertical-align: top;
@@ -150,7 +150,7 @@ h6 {
   transition: all 0.3s ease-in-out !important;
   -webkit-transition: all 0.3s ease-in-out !important;
   border-radius: 5px !important;
-  padding: 12px 60px;
+  padding: 1.2rem 6rem;
   border: 2px solid #ffffff;
   box-sizing: border-box;
   background-color: #000000; }
@@ -746,6 +746,12 @@ h6 {
   background: url(../img/how-it-works-bg.jpg);
   background-size: cover;
   background-position: center center; }
+  @media only screen and (max-width: 75em) {
+    .how-it-works__bg {
+      padding-bottom: 15rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .how-it-works__bg {
+      padding-bottom: 13rem; } }
 
 .how-it-works__bottom {
   margin-top: -30rem; }
@@ -753,6 +759,15 @@ h6 {
 .how-it-works__header {
   text-align: center;
   margin-bottom: 5rem; }
+  @media only screen and (max-width: 75em) {
+    .how-it-works__header {
+      margin-bottom: 4rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .how-it-works__header {
+      margin-bottom: 3rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .how-it-works__header {
+      margin-bottom: 2rem; } }
   .how-it-works__header p {
     font-size: 1.5rem;
     line-height: 2.8rem;
@@ -762,6 +777,38 @@ h6 {
 .how-it-works__steps {
   text-align: center;
   margin-bottom: 10rem; }
+  @media only screen and (max-width: 75em) {
+    .how-it-works__steps {
+      margin-bottom: 8rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .how-it-works__steps {
+      margin-bottom: 5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .how-it-works__steps {
+      margin-bottom: 2rem; } }
+  .how-it-works__steps--item--card {
+    min-height: 40rem; }
+    @media only screen and (max-width: 75em) {
+      .how-it-works__steps--item--card {
+        min-height: 45rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .how-it-works__steps--item--card {
+        min-height: 38rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .how-it-works__steps--item--card {
+        min-height: 38rem; } }
+
+.how-it-works__steps--img {
+  max-width: 90%; }
+  @media only screen and (max-width: 75em) {
+    .how-it-works__steps--img {
+      max-width: 70%; } }
+  @media only screen and (max-width: 56.25em) {
+    .how-it-works__steps--img {
+      max-width: 50%; } }
+  @media only screen and (max-width: 37.5em) {
+    .how-it-works__steps--img {
+      max-width: 40%; } }
 
 .how-it-works__steps--heading {
   margin-bottom: 7px;
@@ -779,6 +826,15 @@ h6 {
 
 .how-it-works__supports--heading {
   margin-bottom: 3rem; }
+  @media only screen and (max-width: 75em) {
+    .how-it-works__supports--heading {
+      margin-bottom: 2.5rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .how-it-works__supports--heading {
+      margin-bottom: 2rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .how-it-works__supports--heading {
+      margin-bottom: 1rem; } }
 
 .how-it-works__supports--shopping-and-deliver {
   max-width: 90%;
@@ -805,7 +861,19 @@ h6 {
   margin-bottom: 2rem; }
 
 .how-it-works__supports--step__single {
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1.5rem;
+  min-height: 23rem !important; }
+  @media only screen and (max-width: 75em) {
+    .how-it-works__supports--step__single {
+      min-height: 21rem !important; } }
+  @media only screen and (max-width: 56.25em) {
+    .how-it-works__supports--step__single {
+      min-height: auto !important;
+      margin-bottom: 1rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .how-it-works__supports--step__single {
+      min-height: auto !important;
+      margin-bottom: 0.5rem; } }
 
 .item-no {
   color: #0abc5f;

@@ -6,15 +6,40 @@
     background: url(../img/how-it-works-bg.jpg);
     background-size: cover;
     background-position: center center;
+
+    @include respond(tab-land) {
+      padding-bottom: 15rem;
+    }
+
+    @include respond(tab-port) {
+      padding-bottom: 13rem;
+    }
+    @include respond(phone) {
+    }
   }
 
   &__bottom {
     margin-top: -30rem;
+
+    @include respond(phone) {
+      // margin-top: 0;
+    }
   }
 
   &__header {
     text-align: center;
     margin-bottom: 5rem;
+
+    @include respond(tab-land) {
+      margin-bottom: 4rem;
+    }
+
+    @include respond(tab-port) {
+      margin-bottom: 3rem;
+    }
+    @include respond(phone) {
+      margin-bottom: 2rem;
+    }
     p {
       font-size: 1.5rem;
       line-height: 2.8rem;
@@ -26,9 +51,46 @@
   &__steps {
     text-align: center;
     margin-bottom: 10rem;
+
+    @include respond(tab-land) {
+      margin-bottom: 8rem;
+    }
+
+    @include respond(tab-port) {
+      margin-bottom: 5rem;
+    }
+    @include respond(phone) {
+      margin-bottom: 2rem;
+    }
+
+    &--item--card {
+      min-height: 40rem;
+
+      @include respond(tab-land) {
+        min-height: 45rem;
+      }
+
+      @include respond(tab-port) {
+        min-height: 38rem;
+      }
+      @include respond(phone) {
+        min-height: 38rem;
+      }
+    }
   }
 
   &__steps--img {
+    max-width: 90%;
+    @include respond(tab-land) {
+      max-width: 70%;
+    }
+
+    @include respond(tab-port) {
+      max-width: 50%;
+    }
+    @include respond(phone) {
+      max-width: 40%;
+    }
   }
 
   &__steps--heading {
@@ -49,6 +111,16 @@
   &__supports {
     &--heading {
       margin-bottom: 3rem;
+      @include respond(tab-land) {
+        margin-bottom: 2.5rem;
+      }
+
+      @include respond(tab-port) {
+        margin-bottom: 2rem;
+      }
+      @include respond(phone) {
+        margin-bottom: 1rem;
+      }
     }
     &--shopping-and-deliver {
       max-width: 90%;
@@ -82,6 +154,20 @@
 
     &--step__single {
       margin-bottom: 1.5rem;
+      min-height: 23rem !important;
+
+      @include respond(tab-land) {
+        min-height: 21rem !important;
+      }
+
+      @include respond(tab-port) {
+        min-height: auto !important;
+        margin-bottom: 1rem;
+      }
+      @include respond(phone) {
+        min-height: auto !important;
+        margin-bottom: 0.5rem;
+      }
     }
   }
 }
