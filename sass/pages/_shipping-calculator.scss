@@ -8,6 +8,21 @@
     padding: 3rem;
     text-align: center;
     border-radius: 5px;
+
+    @include respond(tab-land) {
+      margin-bottom: 3rem;
+    }
+
+    @include respond(tab-port) {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      padding: 2rem;
+    }
+    @include respond(phone) {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      padding: 1rem;
+    }
   }
 
   .discount-title {
@@ -22,6 +37,19 @@
     -webkit-transition: opacity 0.24s ease-in-out;
     -moz-transition: opacity 0.24s ease-in-out;
     transition: opacity 0.24s ease-in-out;
+
+    @include respond(tab-land) {
+      font-size: 4rem;
+    }
+
+    @include respond(tab-port) {
+      font-size: 3.5rem;
+      line-height: 4rem;
+    }
+    @include respond(phone) {
+      font-size: 3rem;
+      line-height: 3.5rem;
+    }
 
     .discount-amount {
       color: $color-red-light;
@@ -41,6 +69,21 @@
     letter-spacing: -1px;
     font-weight: 700;
     font-size: 4rem;
+
+    @include respond(tab-land) {
+      margin-bottom: 2.5rem;
+    }
+
+    @include respond(tab-port) {
+      margin-bottom: 2rem;
+      font-size: 3.5rem;
+      line-height: 4rem;
+    }
+    @include respond(phone) {
+      margin-bottom: 1rem;
+      font-size: 3rem;
+      line-height: 3.5rem;
+    }
   }
   &__lists {
     display: flex;
@@ -55,8 +98,33 @@
     font-weight: 400;
     line-height: 2.8rem;
 
+    @include respond(tab-land) {
+      width: 20%;
+    }
+
+    @include respond(tab-port) {
+      width: 33%;
+    }
+    @include respond(phone) {
+      width: 50%;
+    }
+
     &--img {
       margin-bottom: 3.5rem;
+      max-width: 100%;
+      @include respond(tab-land) {
+        margin-bottom: 2.5rem;
+        max-width: 90%;
+      }
+
+      @include respond(tab-port) {
+        margin-bottom: 2rem;
+        max-width: 70%;
+      }
+      @include respond(phone) {
+        margin-bottom: 1rem;
+        max-width: 50%;
+      }
     }
 
     &--name {
@@ -81,11 +149,33 @@
     font-size: 1.5rem;
     line-height: 2.8rem;
     margin-bottom: 3rem;
+
+    @include respond(tab-land) {
+      margin-bottom: 2.5rem;
+    }
+
+    @include respond(tab-port) {
+      margin-bottom: 2rem;
+    }
+    @include respond(phone) {
+      margin-bottom: 1rem;
+    }
   }
 
   &__details {
     margin-bottom: 3rem;
     font-size: inherit;
+
+    @include respond(tab-land) {
+      margin-bottom: 2.5rem;
+    }
+
+    @include respond(tab-port) {
+      margin-bottom: 2rem;
+    }
+    @include respond(phone) {
+      margin-bottom: 1rem;
+    }
   }
 
   &__lists {
@@ -97,8 +187,33 @@
     width: 20%;
     text-align: center;
 
+    @include respond(tab-land) {
+      width: 33%;
+    }
+
+    @include respond(tab-port) {
+      width: 50%;
+    }
+    @include respond(phone) {
+      width: 100%;
+    }
+
     &--img {
+      max-width: 100%;
       margin-bottom: 3rem;
+      @include respond(tab-land) {
+        margin-bottom: 2.5rem;
+        max-width: 80%;
+      }
+
+      @include respond(tab-port) {
+        margin-bottom: 2rem;
+        max-width: 70%;
+      }
+      @include respond(phone) {
+        margin-bottom: 1rem;
+        max-width: 50%;
+      }
     }
 
     &--name {
@@ -124,6 +239,23 @@
 
     margin-bottom: 4rem;
     border-radius: 5px;
+
+    @include respond(tab-land) {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    @include respond(tab-port) {
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    @include respond(phone) {
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
   }
 
   &__heading {
@@ -133,6 +265,21 @@
     letter-spacing: -1px;
     font-weight: 700;
     font-size: 4rem;
+
+    @include respond(tab-land) {
+      margin-bottom: 2.5rem;
+    }
+
+    @include respond(tab-port) {
+      margin-bottom: 2rem;
+      font-size: 3.5rem;
+      line-height: 4rem;
+    }
+    @include respond(phone) {
+      margin-bottom: 1rem;
+      font-size: 3rem;
+      line-height: 3.5rem;
+    }
   }
 
   &__heading {
@@ -142,6 +289,21 @@
     letter-spacing: -1px;
     font-weight: 700;
     font-size: 4rem;
+
+    @include respond(tab-land) {
+      margin-bottom: 2.5rem;
+    }
+
+    @include respond(tab-port) {
+      margin-bottom: 2rem;
+      font-size: 3.5rem;
+      line-height: 4rem;
+    }
+    @include respond(phone) {
+      margin-bottom: 1rem;
+      font-size: 3rem;
+      line-height: 3.5rem;
+    }
   }
 }
 
@@ -156,6 +318,20 @@
     box-shadow: none;
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
+
+    @include respond(tab-land) {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+
+    @include respond(tab-port) {
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+    }
+    @include respond(phone) {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
   }
 
   &__heading {
@@ -163,16 +339,41 @@
     line-height: 4.8rem;
     text-transform: uppercase;
     margin-bottom: 1rem;
+
+    @include respond(tab-land) {
+      font-size: 4rem;
+    }
+
+    @include respond(tab-port) {
+      font-size: 3.5rem;
+      line-height: 4rem;
+    }
+    @include respond(phone) {
+      font-size: 3rem;
+      line-height: 3.5rem;
+    }
   }
 
   &__details {
   }
   &__details--strong {
     margin-bottom: 4rem !important;
+
+    @include respond(tab-land) {
+      margin-bottom: 3rem !important;
+    }
+
+    @include respond(tab-port) {
+      margin-bottom: 2rem !important;
+    }
+    @include respond(phone) {
+      margin-bottom: 1rem !important;
+    }
   }
 
   &__img {
     margin-bottom: 2rem;
+    max-width: 100%;
   }
 }
 
@@ -186,6 +387,33 @@
     box-shadow: none;
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
+
+    @include respond(tab-land) {
+      margin-bottom: 2.3rem;
+    }
+
+    @include respond(tab-port) {
+      margin-bottom: 2rem;
+    }
+    @include respond(phone) {
+      margin-bottom: 1rem;
+    }
+
+    img {
+      max-width: 100%;
+      margin-top: 1rem;
+
+      @include respond(tab-land) {
+        margin-top: 2.3rem;
+      }
+
+      @include respond(tab-port) {
+        margin-top: 3rem;
+      }
+      @include respond(phone) {
+        margin-top: 3.5rem;
+      }
+    }
   }
 
   &__heading {
@@ -193,6 +421,17 @@
     line-height: 2.8rem;
     font-weight: 700;
     margin-bottom: 3rem;
+
+    @include respond(tab-land) {
+      margin-bottom: 2.3rem;
+    }
+
+    @include respond(tab-port) {
+      margin-bottom: 2rem;
+    }
+    @include respond(phone) {
+      margin-bottom: 1rem;
+    }
   }
 }
 
@@ -206,6 +445,20 @@
     box-shadow: none;
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
+
+    @include respond(tab-land) {
+      padding-top: 2.3rem;
+      padding-bottom: 2.3rem;
+    }
+
+    @include respond(tab-port) {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+    @include respond(phone) {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
   }
 }
 
@@ -214,6 +467,17 @@
     margin-bottom: 6rem;
     clear: both;
     overflow: hidden;
+
+    @include respond(tab-land) {
+      margin-bottom: 5rem;
+    }
+
+    @include respond(tab-port) {
+      margin-bottom: 3rem;
+    }
+    @include respond(phone) {
+      margin-bottom: 1rem;
+    }
   }
   &__heading {
     font-size: 4rem;
@@ -229,5 +493,19 @@
     text-align: center;
     margin-top: 4rem;
     margin-bottom: 3rem;
+
+    @include respond(tab-land) {
+      margin-top: 3rem;
+      margin-bottom: 2.5rem;
+    }
+
+    @include respond(tab-port) {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+    @include respond(phone) {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
   }
 }

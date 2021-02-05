@@ -511,6 +511,15 @@ h6 {
       border: 1px solid red;
       margin: 5px;
       width: 24%; }
+      @media only screen and (max-width: 75em) {
+        .shopping-sites__lists__filters .filter-item {
+          width: 24%; } }
+      @media only screen and (max-width: 56.25em) {
+        .shopping-sites__lists__filters .filter-item {
+          width: 24%; } }
+      @media only screen and (max-width: 37.5em) {
+        .shopping-sites__lists__filters .filter-item {
+          width: 48%; } }
       .shopping-sites__lists__filters .filter-item img {
         max-width: 100%; }
 
@@ -837,8 +846,21 @@ h6 {
       margin-bottom: 1rem; } }
 
 .how-it-works__supports--shopping-and-deliver {
-  max-width: 90%;
-  height: auto; }
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .how-it-works__supports--shopping-and-deliver img {
+    max-width: 90%;
+    height: auto; }
+    @media only screen and (max-width: 75em) {
+      .how-it-works__supports--shopping-and-deliver img {
+        max-width: 80%; } }
+    @media only screen and (max-width: 56.25em) {
+      .how-it-works__supports--shopping-and-deliver img {
+        max-width: 60%; } }
+    @media only screen and (max-width: 37.5em) {
+      .how-it-works__supports--shopping-and-deliver img {
+        max-width: 50%; } }
 
 .how-it-works__supports--details {
   font-size: 1.5rem;
@@ -886,6 +908,12 @@ h6 {
   background: url(../img/buy-for-me-bg.jpg);
   background-size: cover;
   background-position: center center; }
+  @media only screen and (max-width: 75em) {
+    .buy-for-me__bg {
+      padding-bottom: 15rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .buy-for-me__bg {
+      padding-bottom: 13rem; } }
 
 .shipping-calculator {
   background-color: #ffffff; }
@@ -896,6 +924,19 @@ h6 {
     padding: 3rem;
     text-align: center;
     border-radius: 5px; }
+    @media only screen and (max-width: 75em) {
+      .shipping-calculator .discount {
+        margin-bottom: 3rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .shipping-calculator .discount {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        padding: 2rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .shipping-calculator .discount {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding: 1rem; } }
   .shipping-calculator .discount-title {
     text-transform: uppercase;
     line-height: 4.8rem;
@@ -908,6 +949,17 @@ h6 {
     -webkit-transition: opacity 0.24s ease-in-out;
     -moz-transition: opacity 0.24s ease-in-out;
     transition: opacity 0.24s ease-in-out; }
+    @media only screen and (max-width: 75em) {
+      .shipping-calculator .discount-title {
+        font-size: 4rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .shipping-calculator .discount-title {
+        font-size: 3.5rem;
+        line-height: 4rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .shipping-calculator .discount-title {
+        font-size: 3rem;
+        line-height: 3.5rem; } }
     .shipping-calculator .discount-title .discount-amount {
       color: #f4524d; }
 
@@ -921,6 +973,19 @@ h6 {
     letter-spacing: -1px;
     font-weight: 700;
     font-size: 4rem; }
+    @media only screen and (max-width: 75em) {
+      .weight-of-goods__heading {
+        margin-bottom: 2.5rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .weight-of-goods__heading {
+        margin-bottom: 2rem;
+        font-size: 3.5rem;
+        line-height: 4rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .weight-of-goods__heading {
+        margin-bottom: 1rem;
+        font-size: 3rem;
+        line-height: 3.5rem; } }
   .weight-of-goods__lists {
     display: flex;
     flex-wrap: wrap; }
@@ -931,8 +996,30 @@ h6 {
     font-size: 1.5rem;
     font-weight: 400;
     line-height: 2.8rem; }
+    @media only screen and (max-width: 75em) {
+      .weight-of-goods__item {
+        width: 20%; } }
+    @media only screen and (max-width: 56.25em) {
+      .weight-of-goods__item {
+        width: 33%; } }
+    @media only screen and (max-width: 37.5em) {
+      .weight-of-goods__item {
+        width: 50%; } }
     .weight-of-goods__item--img {
-      margin-bottom: 3.5rem; }
+      margin-bottom: 3.5rem;
+      max-width: 100%; }
+      @media only screen and (max-width: 75em) {
+        .weight-of-goods__item--img {
+          margin-bottom: 2.5rem;
+          max-width: 90%; } }
+      @media only screen and (max-width: 56.25em) {
+        .weight-of-goods__item--img {
+          margin-bottom: 2rem;
+          max-width: 70%; } }
+      @media only screen and (max-width: 37.5em) {
+        .weight-of-goods__item--img {
+          margin-bottom: 1rem;
+          max-width: 50%; } }
     .weight-of-goods__item--name {
       font-weight: 700;
       margin-bottom: 1rem; }
@@ -950,17 +1037,57 @@ h6 {
     font-size: 1.5rem;
     line-height: 2.8rem;
     margin-bottom: 3rem; }
+    @media only screen and (max-width: 75em) {
+      .shipping-companies__heading {
+        margin-bottom: 2.5rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .shipping-companies__heading {
+        margin-bottom: 2rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .shipping-companies__heading {
+        margin-bottom: 1rem; } }
   .shipping-companies__details {
     margin-bottom: 3rem;
     font-size: inherit; }
+    @media only screen and (max-width: 75em) {
+      .shipping-companies__details {
+        margin-bottom: 2.5rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .shipping-companies__details {
+        margin-bottom: 2rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .shipping-companies__details {
+        margin-bottom: 1rem; } }
   .shipping-companies__lists {
     display: flex;
     flex-wrap: wrap; }
   .shipping-companies__item {
     width: 20%;
     text-align: center; }
+    @media only screen and (max-width: 75em) {
+      .shipping-companies__item {
+        width: 33%; } }
+    @media only screen and (max-width: 56.25em) {
+      .shipping-companies__item {
+        width: 50%; } }
+    @media only screen and (max-width: 37.5em) {
+      .shipping-companies__item {
+        width: 100%; } }
     .shipping-companies__item--img {
+      max-width: 100%;
       margin-bottom: 3rem; }
+      @media only screen and (max-width: 75em) {
+        .shipping-companies__item--img {
+          margin-bottom: 2.5rem;
+          max-width: 80%; } }
+      @media only screen and (max-width: 56.25em) {
+        .shipping-companies__item--img {
+          margin-bottom: 2rem;
+          max-width: 70%; } }
+      @media only screen and (max-width: 37.5em) {
+        .shipping-companies__item--img {
+          margin-bottom: 1rem;
+          max-width: 50%; } }
     .shipping-companies__item--name {
       color: #c2bebf; }
 
@@ -978,18 +1105,59 @@ h6 {
     color: #ffffff;
     margin-bottom: 4rem;
     border-radius: 5px; }
+    @media only screen and (max-width: 75em) {
+      .shopping-help-card {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        margin-bottom: 3rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .shopping-help-card {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        margin-bottom: 2rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .shopping-help-card {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        margin-bottom: 1rem; } }
   .shopping-help__heading {
     margin-bottom: 3rem;
     line-height: 4.8rem;
     letter-spacing: -1px;
     font-weight: 700;
     font-size: 4rem; }
+    @media only screen and (max-width: 75em) {
+      .shopping-help__heading {
+        margin-bottom: 2.5rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .shopping-help__heading {
+        margin-bottom: 2rem;
+        font-size: 3.5rem;
+        line-height: 4rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .shopping-help__heading {
+        margin-bottom: 1rem;
+        font-size: 3rem;
+        line-height: 3.5rem; } }
   .shopping-help__heading {
     margin-bottom: 3rem;
     line-height: 4.8rem;
     letter-spacing: -1px;
     font-weight: 700;
     font-size: 4rem; }
+    @media only screen and (max-width: 75em) {
+      .shopping-help__heading {
+        margin-bottom: 2.5rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .shopping-help__heading {
+        margin-bottom: 2rem;
+        font-size: 3.5rem;
+        line-height: 4rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .shopping-help__heading {
+        margin-bottom: 1rem;
+        font-size: 3rem;
+        line-height: 3.5rem; } }
 
 .start-shop-and-ship {
   text-align: center;
@@ -1001,15 +1169,48 @@ h6 {
     box-shadow: none;
     padding-top: 2.5rem;
     padding-bottom: 2.5rem; }
+    @media only screen and (max-width: 75em) {
+      .start-shop-and-ship--card {
+        padding-top: 2rem;
+        padding-bottom: 2rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .start-shop-and-ship--card {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .start-shop-and-ship--card {
+        padding-top: 1rem;
+        padding-bottom: 1rem; } }
   .start-shop-and-ship__heading {
     font-size: 4rem;
     line-height: 4.8rem;
     text-transform: uppercase;
     margin-bottom: 1rem; }
+    @media only screen and (max-width: 75em) {
+      .start-shop-and-ship__heading {
+        font-size: 4rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .start-shop-and-ship__heading {
+        font-size: 3.5rem;
+        line-height: 4rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .start-shop-and-ship__heading {
+        font-size: 3rem;
+        line-height: 3.5rem; } }
   .start-shop-and-ship__details--strong {
     margin-bottom: 4rem !important; }
+    @media only screen and (max-width: 75em) {
+      .start-shop-and-ship__details--strong {
+        margin-bottom: 3rem !important; } }
+    @media only screen and (max-width: 56.25em) {
+      .start-shop-and-ship__details--strong {
+        margin-bottom: 2rem !important; } }
+    @media only screen and (max-width: 37.5em) {
+      .start-shop-and-ship__details--strong {
+        margin-bottom: 1rem !important; } }
   .start-shop-and-ship__img {
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    max-width: 100%; }
 
 .shipping-cost {
   font-size: 1.5rem;
@@ -1020,11 +1221,41 @@ h6 {
     box-shadow: none;
     padding-top: 2.5rem;
     padding-bottom: 2.5rem; }
+    @media only screen and (max-width: 75em) {
+      .shipping-cost--card {
+        margin-bottom: 2.3rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .shipping-cost--card {
+        margin-bottom: 2rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .shipping-cost--card {
+        margin-bottom: 1rem; } }
+    .shipping-cost--card img {
+      max-width: 100%;
+      margin-top: 1rem; }
+      @media only screen and (max-width: 75em) {
+        .shipping-cost--card img {
+          margin-top: 2.3rem; } }
+      @media only screen and (max-width: 56.25em) {
+        .shipping-cost--card img {
+          margin-top: 3rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .shipping-cost--card img {
+          margin-top: 3.5rem; } }
   .shipping-cost__heading {
     font-size: 1.5rem;
     line-height: 2.8rem;
     font-weight: 700;
     margin-bottom: 3rem; }
+    @media only screen and (max-width: 75em) {
+      .shipping-cost__heading {
+        margin-bottom: 2.3rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .shipping-cost__heading {
+        margin-bottom: 2rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .shipping-cost__heading {
+        margin-bottom: 1rem; } }
 
 .shipping-country {
   font-size: 1.5rem;
@@ -1035,11 +1266,32 @@ h6 {
     box-shadow: none;
     padding-top: 2.5rem;
     padding-bottom: 2.5rem; }
+    @media only screen and (max-width: 75em) {
+      .shipping-country--card {
+        padding-top: 2.3rem;
+        padding-bottom: 2.3rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .shipping-country--card {
+        padding-top: 2rem;
+        padding-bottom: 2rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .shipping-country--card {
+        padding-top: 1rem;
+        padding-bottom: 1rem; } }
 
 .shipping-calculator .calculator {
   margin-bottom: 6rem;
   clear: both;
   overflow: hidden; }
+  @media only screen and (max-width: 75em) {
+    .shipping-calculator .calculator {
+      margin-bottom: 5rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .shipping-calculator .calculator {
+      margin-bottom: 3rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .shipping-calculator .calculator {
+      margin-bottom: 1rem; } }
 
 .shipping-calculator__heading {
   font-size: 4rem;
@@ -1053,26 +1305,77 @@ h6 {
   text-align: center;
   margin-top: 4rem;
   margin-bottom: 3rem; }
+  @media only screen and (max-width: 75em) {
+    .shipping-calculator__btn {
+      margin-top: 3rem;
+      margin-bottom: 2.5rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .shipping-calculator__btn {
+      margin-top: 2rem;
+      margin-bottom: 2rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .shipping-calculator__btn {
+      margin-top: 1rem;
+      margin-bottom: 1rem; } }
 
 .contact-informations {
   background-color: #ffffff;
   padding-top: 15rem;
   padding-bottom: 10rem; }
+  @media only screen and (max-width: 75em) {
+    .contact-informations {
+      padding-top: 12rem;
+      padding-bottom: 8rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .contact-informations {
+      padding-top: 8rem;
+      padding-bottom: 5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .contact-informations {
+      padding-top: 3rem;
+      padding-bottom: 1.5rem; } }
   .contact-informations .contact-information {
     text-align: center;
     color: #030712;
     font-size: 1.5rem;
     line-height: 2.8rem; }
+    @media only screen and (max-width: 37.5em) {
+      .contact-informations .contact-information {
+        margin-bottom: 2rem; } }
     .contact-informations .contact-information__img {
       margin-right: -45px;
       margin-bottom: 2.5rem; }
+      @media only screen and (max-width: 75em) {
+        .contact-informations .contact-information__img {
+          margin-bottom: 2.2rem; } }
+      @media only screen and (max-width: 56.25em) {
+        .contact-informations .contact-information__img {
+          margin-bottom: 2rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .contact-informations .contact-information__img {
+          margin-bottom: 1rem; } }
     .contact-informations .contact-information__name {
       font-size: 2.5rem;
       line-height: 3.5rem;
       margin-bottom: 2.5rem;
       font-weight: 700; }
+      @media only screen and (max-width: 75em) {
+        .contact-informations .contact-information__name {
+          margin-bottom: 2.2rem; } }
+      @media only screen and (max-width: 56.25em) {
+        .contact-informations .contact-information__name {
+          margin-bottom: 2rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .contact-informations .contact-information__name {
+          margin-bottom: 1rem; } }
     .contact-informations .contact-information__details {
       margin-bottom: 2rem; }
+      @media only screen and (max-width: 56.25em) {
+        .contact-informations .contact-information__details {
+          margin-bottom: 1.5rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .contact-informations .contact-information__details {
+          margin-bottom: 1rem; } }
     .contact-informations .contact-information__contact {
       color: #000000;
       font-weight: 600;
@@ -1083,18 +1386,57 @@ h6 {
   background-color: #efeef7;
   padding-top: 10rem;
   padding-bottom: 10rem; }
+  @media only screen and (max-width: 75em) {
+    .contact-form {
+      padding-top: 8rem;
+      padding-bottom: 8rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .contact-form {
+      padding-top: 5rem;
+      padding-bottom: 5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .contact-form {
+      padding-top: 0;
+      padding-bottom: 0; } }
+  @media only screen and (max-width: 37.5em) {
+    .contact-form .row {
+      margin-bottom: 0; } }
   .contact-form__heading {
     text-align: center;
-    font-size: 3.5rem;
     color: #030712;
+    font-size: 3.5rem;
     line-height: 4rem;
     font-weight: 700;
     margin-bottom: 3rem; }
+    @media only screen and (max-width: 75em) {
+      .contact-form__heading {
+        margin-bottom: 3rem;
+        font-size: 3.5rem;
+        line-height: 4rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .contact-form__heading {
+        margin-bottom: 2rem;
+        font-size: 3rem;
+        line-height: 3.5rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .contact-form__heading {
+        margin-bottom: 1rem;
+        font-size: 2.5rem;
+        line-height: 3rem; } }
   .contact-form__details {
     font-size: 1.5rem;
     line-height: 2.8rem;
     color: #030712;
     margin-bottom: 5rem; }
+    @media only screen and (max-width: 75em) {
+      .contact-form__details {
+        margin-bottom: 4rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .contact-form__details {
+        margin-bottom: 3rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .contact-form__details {
+        margin-bottom: 2rem; } }
   .contact-form__form label {
     font-size: 17px;
     font-weight: 400;
