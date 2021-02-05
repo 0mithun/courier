@@ -3,6 +3,20 @@
   padding-top: 15rem;
   padding-bottom: 5rem;
 
+  @include respond(tab-land) {
+    padding-top: 12rem;
+    padding-bottom: 8rem;
+  }
+
+  @include respond(tab-port) {
+    padding-top: 6rem;
+    padding-bottom: 5rem;
+  }
+  @include respond(phone) {
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+  }
+
   &__body {
     font-size: 1.5rem;
     line-height: 2.8rem;
@@ -13,11 +27,30 @@
       text-transform: uppercase;
       padding-top: 2rem;
       padding-bottom: 2rem;
+
+      @include respond(tab-port) {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+      }
+      @include respond(phone) {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
     }
   }
 
   &__header {
     margin-bottom: 4rem;
+    @include respond(tab-land) {
+      margin-bottom: 3.5rem;
+    }
+
+    @include respond(tab-port) {
+      margin-bottom: 2rem;
+    }
+    @include respond(phone) {
+      margin-bottom: 1rem;
+    }
   }
 
   &__heading {
@@ -25,5 +58,16 @@
     line-height: 4.3rem;
     font-weight: 700;
     text-transform: uppercase;
+
+    @include respond(tab-port) {
+      font-size: 3.2rem;
+      line-height: 4rem;
+    }
+    @include respond(phone) {
+      font-size: 3rem;
+      line-height: 3.5rem;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
   }
 }

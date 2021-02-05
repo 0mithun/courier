@@ -1438,7 +1438,7 @@ h6 {
       .contact-form__details {
         margin-bottom: 2rem; } }
   .contact-form__form label {
-    font-size: 17px;
+    font-size: 1.5rem;
     font-weight: 400;
     line-height: 24px;
     color: #000000;
@@ -1456,6 +1456,12 @@ h6 {
   .blog-post__card .card-title {
     font-weight: 700;
     margin-bottom: 2.5rem; }
+    @media only screen and (max-width: 56.25em) {
+      .blog-post__card .card-title {
+        margin-bottom: 1.5rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .blog-post__card .card-title {
+        margin-bottom: 1rem; } }
 
 .user-agreement {
   padding-top: 15rem;
@@ -1473,9 +1479,30 @@ h6 {
   background-color: #ffffff;
   padding-top: 15rem;
   padding-bottom: 5rem; }
+  @media only screen and (max-width: 75em) {
+    .prohibited-items {
+      padding-top: 12rem;
+      padding-bottom: 8rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .prohibited-items {
+      padding-top: 6rem;
+      padding-bottom: 5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .prohibited-items {
+      padding-top: 3rem;
+      padding-bottom: 1.5rem; } }
   .prohibited-items__header {
     text-align: center;
     margin-bottom: 5rem; }
+    @media only screen and (max-width: 75em) {
+      .prohibited-items__header {
+        margin-bottom: 4rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .prohibited-items__header {
+        margin-bottom: 2.5rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .prohibited-items__header {
+        margin-bottom: 1rem; } }
   .prohibited-items__heading {
     margin-bottom: 2rem;
     font-size: 3.5rem;
@@ -1511,6 +1538,18 @@ h6 {
   background-color: #ffffff;
   padding-top: 15rem;
   padding-bottom: 5rem; }
+  @media only screen and (max-width: 75em) {
+    .faq {
+      padding-top: 12rem;
+      padding-bottom: 8rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .faq {
+      padding-top: 6rem;
+      padding-bottom: 5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .faq {
+      padding-top: 3rem;
+      padding-bottom: 1.5rem; } }
   .faq__body {
     font-size: 1.5rem;
     line-height: 2.8rem;
@@ -1520,21 +1559,60 @@ h6 {
       text-transform: uppercase;
       padding-top: 2rem;
       padding-bottom: 2rem; }
+      @media only screen and (max-width: 56.25em) {
+        .faq__body .collapsible-header {
+          padding-top: 1.5rem;
+          padding-bottom: 1.5rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .faq__body .collapsible-header {
+          padding-top: 1rem;
+          padding-bottom: 1rem; } }
   .faq__header {
     margin-bottom: 4rem; }
+    @media only screen and (max-width: 75em) {
+      .faq__header {
+        margin-bottom: 3.5rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .faq__header {
+        margin-bottom: 2rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .faq__header {
+        margin-bottom: 1rem; } }
   .faq__heading {
     font-size: 3.5rem;
     line-height: 4.3rem;
     font-weight: 700;
     text-transform: uppercase; }
+    @media only screen and (max-width: 56.25em) {
+      .faq__heading {
+        font-size: 3.2rem;
+        line-height: 4rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .faq__heading {
+        font-size: 3rem;
+        line-height: 3.5rem;
+        text-align: center;
+        margin-bottom: 2rem; } }
 
 .login {
   padding-top: 10rem;
   padding-bottom: 10rem;
   font-size: 1.5rem;
   line-height: 2.8rem; }
+  @media only screen and (max-width: 75em) {
+    .login {
+      padding-top: 8rem;
+      padding-bottom: 7rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .login {
+      padding-top: 6rem;
+      padding-bottom: 5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .login {
+      padding-top: 3rem;
+      padding-bottom: 1.5rem; } }
   .login label {
-    font-size: 17px;
+    font-size: 1.5rem;
     font-weight: 400;
     line-height: 24px;
     color: #000000;

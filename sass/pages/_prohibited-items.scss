@@ -3,9 +3,34 @@
   padding-top: 15rem;
   padding-bottom: 5rem;
 
+  @include respond(tab-land) {
+    padding-top: 12rem;
+    padding-bottom: 8rem;
+  }
+
+  @include respond(tab-port) {
+    padding-top: 6rem;
+    padding-bottom: 5rem;
+  }
+  @include respond(phone) {
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+  }
+
   &__header {
     text-align: center;
     margin-bottom: 5rem;
+
+    @include respond(tab-land) {
+      margin-bottom: 4rem;
+    }
+
+    @include respond(tab-port) {
+      margin-bottom: 2.5rem;
+    }
+    @include respond(phone) {
+      margin-bottom: 1rem;
+    }
   }
 
   &__heading {
